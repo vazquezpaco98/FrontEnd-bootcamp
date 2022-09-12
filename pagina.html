@@ -11,12 +11,14 @@
         <INPUT TYPE="PASSWORD"  id="password"/>
         <INPUT TYPE="SUBMIT" id="submit"/>
     </FORM>
+    <ul id="list">
 
+    </ul>
     <script>
         $('#submit').click(function(event) {
             event.preventDefault();
-            if($("#user").val() == "paco" && $("#password").val() == "paco"){
-                location.href = "login.html";
+            if($("#user").val() != "" && $("#password").val() == ""){
+                $("#list").append('<li>' + $("#user").val() + '</li>');
             }else{
                 alert("login incorrecto");
             }
@@ -27,5 +29,5 @@
 </HTML>
 
 <!--
-    location.href es la variable donde esta la pagina, si lo cambiamos ya solo cambia la pagina.
+    location.href es la variable donde esta la pagina, si lo cambiamos ya solo cambia la pagina. también vale la función location.replace(la pagina nueva);
 -->
