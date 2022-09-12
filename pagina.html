@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</HEAD>
+
+<BODY>
+    <FORM>
+        <INPUT TYPE="TEXT" name="user" id="user"/>
+        <INPUT TYPE="PASSWORD"  id="password"/>
+        <INPUT TYPE="SUBMIT" id="submit"/>
+    </FORM>
+
+    <script>
+        $('#submit').click(function(event) {
+            event.preventDefault();
+            if($("#user").val() == "paco" && $("#password").val() == "paco"){
+                location.href = "login.html";
+            }else{
+                alert("login incorrecto");
+            }
+        });
+    </script>
+</BODY>
+
+</HTML>
+
+<!--
+    location.href es la variable donde esta la pagina, si lo cambiamos ya solo cambia la pagina.
+-->
