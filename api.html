@@ -17,6 +17,12 @@
                     $("#lista").append('<li>' + response.data[0].first_name + '</li>');
                 })
                }
+            );
+            $.get("https://reqres.in/api/users?page=2", function(data){
+                data.data.forEach(element => {
+                    $("#lista").append('<li>' + element.first_name + '</li>');
+                });
+            }
            );
        </script>
     </body>
