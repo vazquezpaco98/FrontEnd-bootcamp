@@ -57,3 +57,5 @@ Superconsejito del dia: nunca crear un componente a mano, sobretodo si se esta e
 
 
 Vamos a crear un componente nuevo, con menu de navegación, otro que nos muestre la lista de empleados, y otro con un footer.
+
+Para hacerlo, tras crear los componentes, hay siempre un html y un ts. en el ts cambiamos el modelo de la clase y en html su presentación. luego e el appcomponent.html metemos los selectors que haya que meter y palante.
