@@ -10,9 +10,9 @@ export class AppComponent {
   descripcion = "esto-es-una-prueba";
   variable = "esto es una variable string que es algo más larga ahora";
   edad = 23;
+  nombre = "";
 
-
-  cambiarEdad(){
+  cambiarEdad() {
     this.edad++;
   }
 }
