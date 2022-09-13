@@ -21,7 +21,7 @@
     </div>
     
     <div class="container" id="contenedor">
-        <table class="table table-striped" id="tabla">
+        <table class="table" id="tabla">
             <thead>
                 <tr>
                     <th scope="col">Nombre</th>
@@ -41,7 +41,7 @@
     <script>
         $.get("https://reqres.in/api/users?page=2", function (data) {
             data.data.forEach(element => {
-                $("#listado").append("<tr>" + "<td>" + element.first_name + "</td>" + "<td>" + element.last_name + "</td>" + "<td>" + "<img src='" + element.avatar + "'/>" + "</td>" +  "</tr>");
+                $("#listado").append("<tr>" + "<td>" + element.first_name + "</td>" + "<td>" + element.last_name + "</td>" + "<td>" + element.email + "</td>" +  "</tr>");
             });
         }
         );

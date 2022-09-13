@@ -18,7 +18,7 @@
         $('#submit').click(function(event) {
             event.preventDefault();
             if($("#user").val() != "" && $("#password").val() == ""){
-                $("#list").append('<li>' + $("#user").val() + '</li>');
+                location.replace("tabla_boostrap.html");
             }else{
                 alert("login incorrecto");
             }
