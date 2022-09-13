@@ -50,3 +50,10 @@ para escribir código javascript dentro de nuestra página, usamos la etiqueta s
 - el index.html. este es importante, dentro del body tiene la etiqueta app-root. es el componente principal. la idea es la misma que con JQuery, cambiar nuestro código html a pelo. cambiamos el comportamiento de app-root y esto se ve en el index.
 - el appmodule.ts lo que tiene es la declaración del modulo. se declaran los componentes que utilizamos en los import. el providers para los servicios, y el bootstrap que es el componente de arranque, el AppComponent.
 - Si vamos a AppComponent.ts tiene dentro del @Component el selector, una hoja de estilo, un template html y un titulo.
+
+
+Superconsejito del dia: nunca crear un componente a mano, sobretodo si se esta empezando. crearlo desde el cli de angular.
+  *ng generate component < nombre >*
+
+
+Vamos a crear un componente nuevo, con menu de navegación, otro que nos muestre la lista de empleados, y otro con un footer.
