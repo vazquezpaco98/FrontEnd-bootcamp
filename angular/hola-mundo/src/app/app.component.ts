@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hola-mundo';
+  descripcion = "esto-es-una-prueba";
+  variable = "esto es una variable string";
 }
