@@ -13,9 +13,11 @@
         <app-carousel></app-carousel>
       </div>
       <div class="row">
-        <div class="col"><app-product-item></app-product-item></div>
-        <div class="col"><app-product-item></app-product-item></div>
-        <div class="col"><app-product-item></app-product-item></div>
+        <div *ngFor="let product of products" class="col">
+            <div *ngIf="product">
+              <app-product-item [product]="product"></app-product-item>
+            </div>   
+        </div>
       </div>
     </div>
   </div>

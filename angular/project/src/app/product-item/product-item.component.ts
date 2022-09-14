@@ -1,16 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from '../product';
+import { ProductService } from '../product-service';
+
 
 @Component({
   selector: 'app-product-item',
   templateUrl: './product-item.component.html',
-  styleUrls: ['./product-item.component.css']
+  styleUrls: ['./product-item.component.css'],
+  providers: [ProductService]
 })
 export class ProductItemComponent implements OnInit {
 
- product: Product = new Product("hola", 89, "esto es una descripcion");
+  @Input() product;
 
-  constructor() { }
+  constructor(productService: ProductService) { this.product = productService.getProduct();}
 
   ngOnInit(): void {
   }
