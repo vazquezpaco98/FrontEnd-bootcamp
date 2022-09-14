@@ -11,7 +11,7 @@ export class ProductService {
         var array = new Array(3);
         array[0] = new Product("Producto", 81, "Esto es la descripcion del servicio");
         array[1] = new Product("Cámara", 82, "Esto es la descripcion del servicio");
-        array[2] = null;
+        array[2] = new Product("Tele", 22, "Esto es la descripcion del servicio");
         return array;
     }
 }
