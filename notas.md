@@ -86,3 +86,9 @@ Creamos dos paginas, una home y una productod etallado. Pero la navegación y to
   - 2. Pasar el código html del app component al home. y la lógica tambien.
   - 3. Añadir el router-outler en el app.component.html
   - 4. Generar las rutas y los path en el router.
+
+
+También hemos cambiado el navbar para que se metan los botones de los enlaces a las páginas.
+
+
+Vamos a hacerlo dinámico. Que el producto se pueda identificar. Hay que cambiar el path, el routerlink y recoger el atributo.

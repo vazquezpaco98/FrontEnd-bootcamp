@@ -4,7 +4,7 @@
     </div>
     <div class="row">
       <div *ngFor="let product of products" class="col">
-          <div *ngIf="product.precio < 50; else elseBlock">
+          <div *ngIf="product; else elseBlock">
             <app-product-item [product]="product"></app-product-item>
           </div>
           <ng-template #elseBlock>El precio no es tan bajo</ng-template>   

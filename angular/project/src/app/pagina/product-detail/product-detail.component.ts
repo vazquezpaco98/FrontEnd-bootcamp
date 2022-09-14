@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Product } from 'src/app/product';
+import { ProductService } from 'src/app/product-service';
 
 @Component({
   selector: 'app-product-detail',
@@ -8,11 +9,10 @@ import { Product } from 'src/app/product';
 })
 export class ProductDetailComponent implements OnInit {
 
+  @Input() product;
 
-  product: Product = new Product("hola", 88, "Y la descripcion del detallado");
 
-
-  constructor() { }
+  constructor(productService: ProductService) { this.product = productService.getProduct(); }
 
   ngOnInit(): void {
   }
