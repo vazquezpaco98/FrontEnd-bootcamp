@@ -78,3 +78,11 @@ La idea es crear componentes nuevos que hagan de página. Son un tipo de compone
 Ejemplo: Ahora creamos el componente producto_detallado que me enseñe bien cada cosa.
 
 O yo que sé la página de contacto. Lo que es una página de to la vida, es una caja más pero más grande.
+
+### Ejemplo
+Creamos dos paginas, una home y una productod etallado. Pero la navegación y to los margenes se quedan, hay que cambiar solo el container de dentro.
+- Paso a paso: 
+  - 1. Crear dos componentes: pagina/HomeComponent (*ng g component pagina/home*) y otro pagina/ProductDetailComponent (el component lo pone solo). 
+  - 2. Pasar el código html del app component al home. y la lógica tambien.
+  - 3. Añadir el router-outler en el app.component.html
+  - 4. Generar las rutas y los path en el router.

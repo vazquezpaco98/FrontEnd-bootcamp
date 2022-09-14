@@ -9,6 +9,8 @@ import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductItemComponent } from './product-item/product-item.component';
+import { HomeComponent } from './pagina/home/home.component';
+import { ProductDetailComponent } from './pagina/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProductItemComponent } from './product-item/product-item.component';
     SearchComponent,
     NavbarComponent,
     StarsComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    HomeComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+      <app-carousel></app-carousel>
+    </div>
+    <div class="row">
+      <div *ngFor="let product of products" class="col">
+          <div *ngIf="product.precio < 50; else elseBlock">
+            <app-product-item [product]="product"></app-product-item>
+          </div>
+          <ng-template #elseBlock>El precio no es tan bajo</ng-template>   
+      </div>
+    </div>
+  </div>
