@@ -65,3 +65,16 @@ Para hacerlo, tras crear los componentes, hay siempre un html y un ts. en el ts 
 ### Directivas estructurales
 
 los ngFor, ngIf y demás deberían ser sencillos, cuestiones de presentación. La lógica de negocio no se mete en el html.
+
+
+Para no tener que crear una clase nueva para cada if, por ejemplo si no queremos cambiar estilo, solo añadir o no texo, se usa el ng-container.
+
+## Routing
+
+Aqui empieza ya lo conceptual, según como funciona la página web. 
+
+La idea es crear componentes nuevos que hagan de página. Son un tipo de componentes.
+
+Ejemplo: Ahora creamos el componente producto_detallado que me enseñe bien cada cosa.
+
+O yo que sé la página de contacto. Lo que es una página de to la vida, es una caja más pero más grande.
