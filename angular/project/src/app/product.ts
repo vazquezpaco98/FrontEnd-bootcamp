@@ -1,5 +1,5 @@
 export class Product {
-    imagen = 'https://picsum.photos/300/300';
+    imagen = "https://picsum.photos/500/400";
 
     nombre = "nombre";
 

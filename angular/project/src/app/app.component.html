@@ -14,9 +14,10 @@
       </div>
       <div class="row">
         <div *ngFor="let product of products" class="col">
-            <div *ngIf="product">
+            <div *ngIf="product; else elseBlock">
               <app-product-item [product]="product"></app-product-item>
-            </div>   
+            </div>
+            <ng-template #elseBlock>No hay producto disponible</ng-template>   
         </div>
       </div>
     </div>
